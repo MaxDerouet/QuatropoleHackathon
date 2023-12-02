@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header text-center">
+            <p>Deutsch</p>
+        </div>
+        <div class="card-body">
+            <a asp-controller="Home" asp-action="CheckLiterate" asp-route-lang="german"><img src="images/flag-german.png" style="width:100%;" /></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header text-center">
+            <p>France</p>
+        </div>
+        <div class="card-body">
+            <a asp-controller="Home" asp-action="CheckLiterate" asp-route-lang="french"><img src="images/flag-france.png" style="width:100%;" /></a>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header text-center">
+            <p>Italiano</p>
+        </div>
+        <div class="card-body">
+            <a asp-controller="Home" asp-action="CheckLiterate" asp-route-lang="italian"><img src="images/flag-italia.png" style="width:100%;" /></a>
+
+        </div>
+    </div>
+</div>

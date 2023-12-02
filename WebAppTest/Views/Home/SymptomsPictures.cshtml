@@ -1,0 +1,68 @@
+﻿@model WebAppTest.Models.Anamnesis
+
+@{
+    ViewData["Title"] = "Symptoms";
+}
+
+
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <input type="checkbox" id="1" asp-for="Fever" />
+            <label for="1">
+                <img src="~/images/symptoms/Fever.JPG" style="width: 100%;" />
+            </label>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <input type="checkbox" id="2" asp-for="Headache" />
+            <label for="2">
+                <img src="~/images/symptoms/Headache.JPG" style="width: 100%;" />
+            </label>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <input type="checkbox" id="3" asp-for="AbdominalPain" />
+            <label for="5">
+                <img src="~/images/symptoms/stomach.JPG" style="width: 100%;" />
+            </label>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <input type="checkbox" id="4" asp-for="SoreThroat" />
+            <label for="1">
+                <img src="~/images/symptoms/Throat.JPG" style="width: 100%;" />
+            </label>
+        </div>
+    </div>
+
+@*     <div class="card">
+        <div class="card-body">
+            <input type="checkbox" id="5" asp-for="kne" />
+            <label for="2">
+                <img src="~/images/symptoms/Knee.JPG" style="width: 100%;" />
+            </label>
+        </div>
+    </div> *@
+
+    <div class="card">
+        <div class="card-body">
+            <input type="checkbox" id="6" asp-for="ElbowPain" />
+            <label for="4">
+                <img src="~/images/symptoms/Elbow.JPG" style="width: 100%;" />
+            </label>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top:12px">
+    <a href="#" onclick="history.back()"><img SRC="~/images/LeftArrow.jpg" style="width:64px; height:auto" /></a>
+    <a asp-controller="SubmitSymptoms"><img SRC="~/images/RightArrow.jpg" style="width:64px; height:auto" /></a>
+</div>
